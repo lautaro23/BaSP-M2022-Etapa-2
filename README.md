@@ -1,6 +1,11 @@
-# Readme for second week
-this is just a readme for a project of Radium Rocket.
+# README
 
-On the second week of the project, i translated a landing page to html language markup.
+This is just a readme about the different stages of Radium Rocket's course.
 
-Then i created a Git repository and started to upload all page content.
+## Week 2
+
+This week i had to open an HTML file and create the structure of a landing page.
+
+## Week 3
+
+This week i had to take the previous HTML file and design the landing page with CSS.
