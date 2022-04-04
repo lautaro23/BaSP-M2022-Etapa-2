@@ -1,11 +1,11 @@
 
 header {
     background-color: #AACE9B;
-    width: 1349px;
+    width: 100%;
     height: 70px;
 }
 
-.title {
+header > h1 {
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 50px;
@@ -17,12 +17,13 @@ nav {
     float: right;
 }
 
-.nav {
+header > nav > ul > li {
     float:left;
-    padding: 10px;
+    padding: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 15px;
+    margin-top: -45px;
 }
 
 .nav a {
@@ -32,4 +33,40 @@ nav {
 
 main {
     font-family: 'Roboto', sans-serif;
+}
+
+aside .subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-decoration-color: #AACE9B;
+    text-decoration-thickness: 5px;
+    }
+
+aside > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+aside > ul {
+    line-height: 90px;
+}
+
+aside > .contact {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+aside > .p-getintouch {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+aside > div {
+    background-color: #C4C4C4;
 }
