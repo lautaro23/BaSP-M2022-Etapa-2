@@ -2,13 +2,13 @@
 header {
     background-color: #AACE9B;
     width: 100%;
-    height: 70px;
+    height: 60px;
 }
 
 header > h1 {
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 40px;
     padding-top: 10px;
 }
@@ -35,6 +35,20 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
+.main-container {
+    position: absolute;
+    width: 75%;
+    right: 0;
+}
+
+aside {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+    height: 100%;
+}
+
 aside .subtitle {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -44,15 +58,11 @@ aside .subtitle {
     text-decoration-thickness: 5px;
     }
 
-aside > ul > li > a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-aside > ul {
-    line-height: 90px;
+aside ul li {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #C4C4C4;
+    margin-top: 10px;
 }
 
 aside > .contact {
@@ -67,6 +77,45 @@ aside > .p-getintouch {
     font-size: 15px;
 }
 
-aside > div {
+.search-menu {
     background-color: #C4C4C4;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.search-menu > form {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+aside {
+    background-color: #ededed;
+}
+
+aside .ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.contact-1 img {
+    float: left;
+}
+
+.contact-1 {
+    margin-top: 30px;
+}
+
+.contact-1 p{
+    position: relative;
+    left: 20px;
 }
