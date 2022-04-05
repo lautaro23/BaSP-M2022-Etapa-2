@@ -215,12 +215,104 @@ aside .ul li a {
  .time img {
      float: left;
      margin-right: 40px;
+     padding-top: 30px;
  }
 
  .time {
-     padding: 20px;
+     padding: 10px;
  }
 
 div .time {
     float: left;
+}
+
+.assets img {
+    border-radius: 15px;
+}
+
+.img-3 img {
+    margin-top: 120px;
+}
+
+.assets h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 74px;
+}
+
+.assets p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    width: 396px;
+}
+
+.assets input {
+    background: #AACE9B;
+    border: 1px solid;
+    border-color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+.assets div {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    margin: 35px 10px 70px 10px;
+}
+
+form input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+    align-items: flex-end;
+    padding: 5px 70px 5px 2px;
+}
+
+form select, form textarea {
+    display: block;
+    width: 82%;
+    padding: 3px;
+    margin: 10px 0px;
+}
+
+form textarea {
+    height: 200px;
+    resize: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+form button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: #AACE9B;
+    border: 3px solid #AACE9B;
+    margin-bottom: 20px;
+    margin: 3px 10px;
+    padding: 7px 15px;
+    border-radius: 10px;
+}
+
+form button:last-child {
+    background-color: #FFFFFF;
+    border: 3px solid #AACE9B;
+    color: #000;
 }
