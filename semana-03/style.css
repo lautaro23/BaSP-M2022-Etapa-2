@@ -109,6 +109,7 @@ aside .ul li a {
 
 .contact-1 img {
     float: left;
+    margin-left: 10px;
 }
 
 .contact-1 {
@@ -117,9 +118,25 @@ aside .ul li a {
 
 .contact-1 p{
     position: relative;
-    left: 20px;
+    left: 10px;
 }
 
+.contact {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.p-getintouch{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    position: relative;
+    width: 300px;
+    margin-left: 10px;
+}
 .remote {
     font-family: 'Roboto';
     font-style: normal;
@@ -166,7 +183,7 @@ aside .ul li a {
     margin: auto;
 }
 
-main section h2 {
+.sub-under {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -176,3 +193,34 @@ main section h2 {
     margin: 0px 750px 20px 0px;
 }
 
+.time h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 10px;
+ }
+
+ .time p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+ .time img {
+     float: left;
+     margin-right: 40px;
+ }
+
+ .time {
+     padding: 20px;
+ }
+
+div .time {
+    float: left;
+}
