@@ -6,11 +6,11 @@ header {
 }
 
 header > h1 {
+    margin-left: 40px;
+    padding-top: 10px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 40px;
-    margin-left: 40px;
-    padding-top: 10px;
 }
 
 nav {
@@ -78,10 +78,10 @@ aside > .p-getintouch {
 }
 
 .search-menu {
+    position: relative;
     background-color: #C4C4C4;
     width: 100%;
     height: 60px;
-    position: relative;
 }
 
 .search-menu > form {
@@ -129,35 +129,35 @@ aside .ul li a {
 }
 
 .p-getintouch{
+    position: relative;
+    width: 300px;
+    margin-left: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
-    position: relative;
-    width: 300px;
-    margin-left: 10px;
 }
 .remote {
+    width: 400px;
+    padding-left: 10px;
+    padding-top: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
-    width: 400px;
-    padding-left: 10px;
-    padding-top: 20px;
 }
 
 .remote-p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    align-items: center;
     position: relative;
     width: 350px;
     height: 363px;
     left: 20px;
     top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    align-items: center;
 }
 
 .planisphere {
@@ -184,32 +184,32 @@ aside .ul li a {
 }
 
 .sub-under {
+    border-bottom: 5px solid #AACE9B;
+    margin: 0px 750px 20px 0px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
     line-height: 40px;
-    border-bottom: 5px solid #AACE9B;
-    margin: 0px 750px 20px 0px;
 }
 
 .time h3 {
+    margin-top: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
-    margin-top: 10px;
  }
 
  .time p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    position: relative;
-    width: 400px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+     position: relative;
+     width: 400px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 15px;
  }
 
  .time img {
@@ -243,12 +243,12 @@ div .time {
 }
 
 .assets p {
+    width: 396px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 24px;
-    width: 396px;
 }
 
 .assets input {
@@ -262,21 +262,21 @@ div .time {
 }
 
 .assets div {
-    position: relative;
     display: inline-block;
+    position: relative;
     width: 45%;
     margin: 35px 10px 70px 10px;
 }
 
 form input {
+    display: inline-block;
+    align-items: flex-end;
+    padding: 5px 70px 5px 2px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    display: inline-block;
-    align-items: flex-end;
-    padding: 5px 70px 5px 2px;
 }
 
 form select, form textarea {
@@ -297,22 +297,98 @@ form textarea {
 }
 
 form button {
+    margin-bottom: 20px;
+    margin: 3px 10px;
+    padding: 7px 15px;
+    background-color: #AACE9B;
+    border: 3px solid #AACE9B;
+    border-radius: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     text-transform: uppercase;
-    background-color: #AACE9B;
-    border: 3px solid #AACE9B;
-    margin-bottom: 20px;
-    margin: 3px 10px;
-    padding: 7px 15px;
-    border-radius: 10px;
 }
 
 form button:last-child {
     background-color: #FFFFFF;
     border: 3px solid #AACE9B;
     color: #000;
+}
+
+.about p {
+    position: absolute;
+    width: 40%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.about img {
+    display: inline-block;
+    border-radius: 20px ;
+    margin-left: 55%;
+    width: 350px;
+    height: 250px;
+}
+
+.about {
+    height: 400px;
+}
+
+.list div {
+    width: 30%;
+    display:inline-block;
+    text-align: center;
+}
+
+.list div h3 {
+    margin: auto;
+    text-decoration: underline #AACE9B;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 74px;
+}
+
+.list div ol li {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.list div ol {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-image: url(../semana-03/img/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+}
+
+footer h4 {
+    margin-top: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+}
+
+footer img {
+    display: inline-block;
+    margin-top: 200px;
+    margin-left: 150px;
 }
