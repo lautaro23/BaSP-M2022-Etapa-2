@@ -9,3 +9,7 @@ This week i had to open an HTML file and create the structure of a landing page.
 ## Week 3
 
 This week i had to take the previous HTML file and design the landing page with CSS.
+
+## Week 4
+
+This week i had to make a responsive web with the flexbox tool.
