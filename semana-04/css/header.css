@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 5rem;
+    min-height: 3rem;
+    width: 100%;
+    background-color: #aace9b;
+}
+
+header h1 {
+    align-self: center;
+    font-family: 'Righteous' , 'Roboto', 'arial' ;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+header nav ul {
+        display: none;
+    }
+
+@media screen and (max-width: 600px) {
+    aside {
+        display: none;
+    }
+}
+
+.burger {
+    justify-content: flex-start;
+    margin: 0;
+}

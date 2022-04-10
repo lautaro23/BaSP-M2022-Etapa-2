@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trackgenix</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/sidebar.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -55,6 +59,9 @@
         </aside>
         <div class="main-container">
             <header>
+                <div class="burger">
+                    <img src="img/burger.png" alt="menu burger">
+                </div>
                 <h1> < TRACKGENIX > </h1>
                 <nav>
                     <ul>
@@ -67,53 +74,73 @@
             </header>
             <main>
                 <section class="princ">
-                    <h2 class="remote"> The future of Remote work </h2>
-                    <p class="remote-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Consequat purus, nulla morbi bibendum in fringilla sed.
-                        Urna, elementum aliquam placerat platea aenean vestibulum varius.
-                        Magna elementum neque arcu, vulputate diam, tincidunt.
-                        Tempus facilisis feugiat habitant nulla elementum phasellus pulvinar leo sit.
-                    </p>
-                    <input type="button" value="LEARN MORE" class="button-learn">
-                    <img src="img/undrawv.png.png" alt="hombre analisando" width="400" height="300" class="planisphere">
+                    <div class="remote-container">
+                        <h2 class="remote"> The future of Remote work </h2>
+                    </div>
+                    <div class="pr-container">
+                        <p class="remote-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Consequat purus, nulla morbi bibendum in fringilla sed.
+                            Urna, elementum aliquam placerat platea aenean vestibulum varius.
+                            Magna elementum neque arcu, vulputate diam, tincidunt.
+                            Tempus facilisis feugiat habitant nulla elementum phasellus pulvinar leo sit.
+                        </p>
+                    </div>
+                    <div class="planisphere-cont">
+                        <img src="img/undrawv.png.png" alt="hombre analisando" width="400" height="300" class="planisphere">
+                    </div>
+                    <div class="buttonl-cont">
+                        <input type="button" value="LEARN MORE" class="button-learn">
+                    </div>
                 </section>
                 <section class="function princ">
                     <h2 class="sub-under">Functions</h2>
-                    <div>
-                        <div class="time">
+                        <div class="time-1">
                             <img src="img/time.png" alt="time">
+                        </div>
                             <div>
                                 <h3>Timekeeping</h3>
+                            </div>
+                            <div>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Leo, venenatis volutpat fusce vitae, in suspendisse proin massa.
                                     Mattis nulla libero nibh eu nisl sed.
                                 </p>
                             </div>
-                        </div>
-                        <div class="time">
+                        <div class="time-2">
                             <img src="img/report (1).png" alt="report">
+                        </div>
+                        <div>
                             <h3>Reports</h3>
+                        </div>
+                        <div> 
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Leo, venenatis volutpat fusce vitae, in suspendisse proin massa.
                                 Mattis nulla libero nibh eu nisl sed.
                             </p>
                         </div>
-                    </div> 
-                    <div class="time">
+                    <div class="time-3">
                         <img src="img/person.png" alt="person">
+                    </div>
+                    <div>
                         <h3>Resource Management</h3>
+                    </div>
+                    <div>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Leo, venenatis volutpat fusce vitae, in suspendisse proin massa.
                             Mattis nulla libero nibh eu nisl sed.
                         </p>
                     </div>
-                    <div class="time">
+                    <div class="time-4">
                         <img src="img/Group 6.png">
+                    </div>
+                    <div>
                         <h3>Multiples Roles</h3>
+                    </div>
+                    <div>
                         <p class="clear">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Leo, venenatis volutpat fusce vitae, in suspendisse proin massa.
@@ -124,7 +151,9 @@
                 <section class="assets princ">
                     <h2 class="sub-under">Assets</h2>
                     <div>
-                        <img src="img/woman.jpg" alt="woman work" width="300" height="200" class="first-column">
+                        <div class="picture-1">
+                            <img src="img/woman.jpg" alt="woman work" width="300" height="200" class="first-column">
+                        </div>
                         <h3>Traceability</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -134,7 +163,9 @@
                         <input type="button" value="MORE">
                     </div>
                     <div>
-                        <img src="img/job.jpg" alt="office" width="300" height="200" class="first-column">
+                        <div class="picture-2">
+                            <img src="img/job.jpg" alt="office" width="300" height="200" class="first-column">
+                        </div>
                         <h3>Desicion making</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -144,7 +175,9 @@
                         <input type="button" value="MORE">
                     </div>
                     <div>
-                        <img src="img/teamwork.jpg" alt="team" width="300" height="200">
+                        <div class="picture-3">
+                            <img src="img/teamwork.jpg" alt="team" width="300" height="200">
+                        </div>
                         <h3>Equipment management</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -154,7 +187,9 @@
                         <input type="button" value="MORE">
                     </div>
                     <div>
-                        <img src="img/digital-marketing.jpg" alt="graphic" width="300" height="200">
+                        <div class="picture-4">
+                            <img src="img/digital-marketing.jpg" alt="graphic" width="300" height="200">
+                        </div>
                         <h3>Efficiency</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
