@@ -4,7 +4,10 @@ main {
 
 .princ {
     border-bottom: 3px solid #C4C4C4;
-    width: 90%;
+    width: 80%;
+    margin-left: 2rem;
+    justify-content: center;
+    align-content: center;
 }
 
 .remote-container{
@@ -146,15 +149,8 @@ main {
     align-content: center;
 }
 
-/* div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-} */
-
 div h3 {
-    margin: 2rem;
+    margin: 1rem;
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -173,5 +169,266 @@ div p{
 
 .assets img {
     border-radius: 1rem;
+}
+
+.picture-1 {
+    width: 100%;
+    display: flex;
     justify-content: center;
+    align-content: center;
+}
+
+.picture-1 img {
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3rem;
+}
+.picture-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.picture-2 img {
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.picture-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.picture-3 img {
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.picture-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.picture-4 img {
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.assets input {
+    background: #AACE9B;
+    border: 0.1rem solid;
+    border-color: black;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.bot-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3rem;
+}
+
+form input {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem 0.5rem 0.2rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.input-name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.input-mail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+
+form select, form textarea {
+    display: block;
+    width: 95%;
+    padding: 0.2rem;
+    margin: 1rem 0;
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+form textarea {
+    height: 12rem;
+    resize: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+
+form button {
+    margin-bottom: 1rem;
+    margin: 0.2rem 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #AACE9B;
+    border: 0.2rem solid #AACE9B;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+form button:last-child {
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 0.2rem solid #AACE9B;
+    color: #000;
+}
+
+.button-m {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    width: 80%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.p-about {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.about-im {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.about-im img {
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.list div h3 {
+    margin: auto;
+    text-decoration: underline #AACE9B;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+.list div ol li {
+    margin-top: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+.list-1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.list-1 ol {
+    width: 30%;
+    margin-bottom: 1rem;
+    justify-content: center; 
+    align-content: center; 
+    list-style-type: decimal;
+}
+
+.list-2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.list-2 ol {
+    width: 30%;
+    margin-bottom: 1rem;
+    justify-content: center; 
+    align-content: center;
+    list-style-type: decimal; 
+
+}
+
+.list-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.list-3 ol {
+    width: 30%;
+    margin-bottom: 1rem;
+    justify-content: center; 
+    align-content: center;
+    list-style-type: decimal; 
 }
