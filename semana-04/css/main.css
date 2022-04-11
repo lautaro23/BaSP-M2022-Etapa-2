@@ -2,23 +2,24 @@ main {
     justify-content: center;
 }
 
-.princ {
-    border-bottom: 3px solid #C4C4C4;
+.section {
     width: 80%;
     margin-left: 2rem;
     justify-content: center;
     align-content: center;
+    border-bottom: 3px solid #C4C4C4;
 }
 
 .remote-container{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-content: center;
 }
 
 .remote {
     width: 80%;
+    text-shadow: 0.2rem 0.2rem 0.5rem #000;
     text-align: center;
     padding-top: 1rem;
     padding-right: 1rem;
@@ -29,17 +30,17 @@ main {
 }
 
 .pr-container{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-content: center;
 }
 
 .pr-container p {
-    width: 80%;
-    text-align: center;
     padding-top: 1rem;
     padding-right: 1rem;
+    width: 80%;
+    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -69,16 +70,15 @@ main {
 }
 
 .button-learn {
+    padding: 0.5rem 1rem;
+    margin: 3rem;
     background: #FFFFFF;
     border: 4px solid #AACE9B;
     box-sizing: border-box;
     border-radius: 1.7rem;
-    padding: 0.5rem 1rem;
-    margin: 3rem;
 }
 
 .sub-under {
-    border-bottom: 0.5rem solid #AACE9B;
     margin: 2rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -87,6 +87,7 @@ main {
     font-weight: 500;
     font-size: 2rem;
     line-height: 3rem;
+    border-bottom: 0.5rem solid #AACE9B;
 }
 
 .time-1 {
@@ -227,13 +228,13 @@ div p{
 }
 
 .assets input {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
     background: #AACE9B;
     border: 0.1rem solid;
     border-color: black;
     box-sizing: border-box;
     border-radius: 0.3rem;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
 }
 
 .bot-more {
@@ -309,15 +310,15 @@ form button {
     margin-bottom: 1rem;
     margin: 0.2rem 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #AACE9B;
-    border: 0.2rem solid #AACE9B;
-    border-radius: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
     text-transform: uppercase;
+    background-color: #AACE9B;
+    border: 0.2rem solid #AACE9B;
+    border-radius: 10px;
 }
 
 form button:last-child {

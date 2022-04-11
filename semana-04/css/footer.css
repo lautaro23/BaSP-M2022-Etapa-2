@@ -1,0 +1,36 @@
+footer {
+    background-image: url(../img/footer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 14rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    margin-top: 3rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.container-copyright {
+    margin-top: 4rem;
+}
+
+footer img {
+    display: inline-block;
+    justify-content: space-around;
+    align-content: center;
+    width: 5%;
+    margin-top: 2rem;
+}
+
+.social-media {
+    justify-content: center;
+    align-content: center;
+}
