@@ -2,6 +2,31 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
+.main.container {
+    flex: 4;
+}
+
+.sub-under {
+    margin: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    border-bottom: 0.5rem solid #AACE9B;
+}
+
+div h3 {
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
 a.link {
     text-decoration: none;
     color: #000;

@@ -24,16 +24,8 @@ header h1 {
 
 header nav ul {
         display: none;
-    }
-
-@media screen and (max-width: 600px) {
-    aside {
-        display: none;
-    }
 }
 
 .burger {
-    justify-content: flex-start;
-    margin: 0;
-    padding-left: 0%;
+    margin-left: 1rem;
 }
