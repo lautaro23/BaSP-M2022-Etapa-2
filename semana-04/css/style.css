@@ -1,9 +1,13 @@
+body {
+    display: flex;
+}
+
 main {
     font-family: 'Roboto', sans-serif;
 }
 
-.main.container {
-    flex: 4;
+.main-container {
+    flex-grow: 6;
 }
 
 .sub-under {
