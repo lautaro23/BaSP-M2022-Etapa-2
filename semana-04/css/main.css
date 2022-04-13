@@ -1,7 +1,3 @@
-main {
-    flex:8;
-}
-
 .section {
     width: 80%;
     margin-left: 2rem;
@@ -10,8 +6,14 @@ main {
     border-bottom: 3px solid #C4C4C4;
 }
 
+.container-text-remote-img {
+    display: flex;
+    flex-direction: column;
+}
+
 .remote-container{
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-content: center;
@@ -78,64 +80,28 @@ main {
     border-radius: 1.7rem;
 }
 
-.time-1 {
+.timekeeping {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     margin-bottom: 0rem;
     margin-top: 3rem;
 }
 
-.time-1 img {
-    width: 20%;
-    justify-content: center;
-    align-content: center;
-}
-
-.time-2 {
+form {
+    display:flex;
+    flex-direction: column;
     width: 100%;
-    display: flex;
     justify-content: center;
-    align-content: center;
-    margin-bottom: 0rem;
-    margin-top: 3rem;
+    align-items: center;
 }
 
-.time-2 img {
-    width: 20%;
-    justify-content: center;
-    align-content: center;
-}
-
-.time-3 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 0rem;
-    margin-top: 3rem;
-}
-
-.time-3 img {
-    width: 20%;
-    justify-content: center;
-    align-content: center;
-}
-
-.time-4 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 0rem;
-    margin-top: 3rem;
-}
-
-.time-4 img {
-    width: 20%;
-    justify-content: center;
-    align-content: center;
+input, select, textarea {
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 1rem;
 }
 
 div h3 {
@@ -234,14 +200,12 @@ div p{
 }
 
 form input {
-    display: flex;
     align-items: center;
     padding: 0.5rem 2rem 0.5rem 0.2rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1rem;
 }
 
 .input-name{
@@ -422,3 +386,63 @@ form button:last-child {
     align-content: center;
     list-style-type: decimal; 
 }
+
+    
+@media screen and (min-width: 768px) {
+    .container-text-remote-img {
+        flex-direction: row;
+    }
+
+    .timekeeping{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    form input {
+        width: 45%;
+    }
+
+    form select, form textarea {
+        width:95%;
+    }
+
+    .button-message {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button-message button{
+        margin-left: 2rem;
+    }
+
+    .p-about {
+        flex-direction: row;
+    }
+
+    .p-about p {
+        max-width: 550px;
+    }
+
+    .p-about img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: 30%;
+        margin-bottom: 2rem;
+    }
+}
+    
