@@ -13,3 +13,7 @@ This week i had to take the previous HTML file and design the landing page with 
 ## Week 4
 
 This week i had to make a responsive web with the flexbox tool.
+
+## Week 5
+
+This week i had to use Javascript and make differents exercises. Then i had to commit with git bash.
