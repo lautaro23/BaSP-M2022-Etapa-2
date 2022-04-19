@@ -1,7 +1,8 @@
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     background-image: url(../img/footer.png);
     background-position: bottom;
@@ -13,27 +14,28 @@ footer {
 footer p {
     margin-bottom: 0;
     margin-top: 2rem;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
     line-height: 1rem;
     color: #fff;
-    text-align: center;
 }
 
 .container-copyright {
-    margin-top: 3rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .social-media {
     display: flex;
-    width: 80%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 14rem;
+    flex-wrap: wrap;
+    margin-top: 10rem;
 }
 
 .social-media a {
-    width: 4%;
+    width: 10%;
 }

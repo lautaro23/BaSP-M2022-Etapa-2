@@ -1,14 +1,9 @@
-.all-aside {
-    flex:1;
-    width: 33%;
-    height: max-content;
-    background-color: #ededed;
-}
-
 aside {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 100vh;
+    flex:2;
+    background-color: #ededed;
 }
 
 .search-menu {
@@ -69,23 +64,17 @@ aside {
 }
 
 .getin {
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 2rem;
     text-decoration-line: underline;
     text-decoration-color: #AACE9B;
     text-decoration-thickness: 0.2rem;
+    margin: 0;
 }
 
 .getin-text {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
     margin-left: 1rem;
     margin-bottom: 3rem;
-    height: 10rem;
     font-size: 0.8rem;
     font-weight: 300;
 }
@@ -98,6 +87,10 @@ aside {
     margin-left: 1rem;
     font-size: 0.6rem;
     font-weight: 300;
+}
+
+.contact-sidebar ul {
+    margin-top: 1rem;
 }
 
 .contact-sidebar li {
@@ -113,9 +106,13 @@ aside {
     border-bottom: none;
 }
 
-@media screen and (max-width: 768px) {
-    aside {
-        display: none;
-    }  
+.contact {
+    word-break: break-all;
+}
+
+@media screen and (min-width: 768px) {
+     aside {
+         display: flex
+     }
 }
 
