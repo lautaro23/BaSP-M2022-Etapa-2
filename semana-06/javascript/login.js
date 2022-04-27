@@ -1,38 +1,32 @@
 window.onload = function() {
-    const formulario = document.getElementById('formulario');
-    const inputs = document.querySelectorAll('#formulario input');
-
-    const expresiones = {
-       email:/[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/,
-       password:/^[A-Za-z0-9\s]+$/
-   }
-
-    const campos = {
-    email: false,
-    password:false
-    }
-
-    const validarFormulario = (e)=> {
-        switch (e.target.name) {
-            case 'email':
-                validarCampo(expresiones.email, e.target, 'email')
-                break;
-
-            case 'password':
-                validarCampo(expresiones.password, e.target, 'password')
-                break;
-        };
-    }
+    var formulario = document.getElementById('formulario');
+    var inputs = document.getElementsByClassName('formulario_input');
+    var email = document.getElementById('email');
+    var password= document.getElementById('password');
+    var messageAlert= document.getElementsByClassName('input_error');
     
-    const validarCampo = (expresion,input,campo) =>{
-        if(expresion.test(input.value)){
-            document.getElementById(`grupo-${campo}`).classList.remove('login_input-incorrecto');
-            document.querySelector(`#grupo-${campo} .input_error`).classList.remove('input_error-active');
-            campos[campo] = true;
-           } else{
-               document.getElementById(`grupo-${campo}`).classList.add('login_input-incorrecto');
-               document.querySelector(`#grupo-${campo} .input_error`).classList.add('input_error-active');}
-               campos[campo] = false;
-           }
-       }
+    function validacionEmail(){
+        var regexEmail = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+        if(email.value.match(regexEmail)){
+            messageAlert[0].classList.remove('input_error');
+            messageAlert[0].innerHTML = "Insert a valid e-mail";
+        }else{
+            messageAlert[0].classList.remove('input_error');
+            messageAlert[0].innerHTML = "valid";
+        }
+    }
+
+    function validacionPassw(){
+        var numb=0;
+        var chart=0;
+        var number = [0,1,2,3,4,5,6,7,8,9];
+        if(number.includes(password.value)){
+            numb++
+        }else{
+            chart++
+        }
+    }
+
+    email.addEventListener('blur',validacionEmail)
+    
 }
