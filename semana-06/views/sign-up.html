@@ -21,7 +21,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <script src="../javascript/login.js"></script>
         <script src="../javascript/sign-up.js"></script>
     </head>
     <body>
@@ -90,65 +89,65 @@
             <main>
                 <div class="form-container">
                     <h2>REGISTER</h2>
-                    <form action="" class="formulario" id="formulario">
-                        <div class="grupo__formulario" id="grupo__name">
-                            <label for="sign-name" class="formulario__label">Name</label>
-                            <input type="text" placeholder="Name" class="formulario__input" id="name">
+                    <form action="" class="form" id="form">
+                        <div class= "group_form" id="group_name">
+                            <label for="sign-name" class="form_label">Name</label>
+                            <input type="text" placeholder="Name" class="form_input" name="name" id="name">
                             <p class="message_error">¡Only letters and more than 3 letters!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__surname">
-                            <label for="sign-surname" class="formulario__label">Surname</label>
-                            <input type="text" placeholder="Surname" class="formulario__input" id="surname">
+                        <div class="group_form" id="group_surname">
+                            <label for="sign-surname" class="form_label">Surname</label>
+                            <input type="text" placeholder="Surname" class="form_input" name="surname" id="surname">
                             <p class="message_error">¡Only letters and more than 3 letters!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__dni">
-                            <label for="sign-dni" class="formulario__label">DNI</label>
-                            <input type="number" placeholder="Identify document" class="formulario__input" id="dni">
+                        <div class="group_form" id="group_dni">
+                            <label for="sign-dni" class="form_label">DNI</label>
+                            <input type="number" placeholder="Identify document" class="form_input" name="dni" id="dni">
                             <p class="message_error">¡Only numbers and more than 7 numbers!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__date">
-                            <label for="sign-date"class="formulario__label">Date of birth</label>
-                            <input type="date" placeholder="Date of bith" class="formulario__input" id="date">
+                        <div class="group_form" id="group_date">
+                            <label for="sign-date"class="form_label">Date of birth</label>
+                            <input type="date" placeholder="Date of bith" class="form_input" name="date" id="date">
                             <p class="message_error">dd/mm/aaaa</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__tel">
-                            <label for="sign-tel"class="formulario__label">Telephone</label>
-                            <input type="tel" placeholder="Telephone" class="formulario__input" id="tel">
+                        <div class="group_form" id="group_tel">
+                            <label for="sign-tel"class="form_label">Telephone</label>
+                            <input type="tel" placeholder="Telephone" class="form_input" name="tel" id="tel">
                             <p class="message_error">¡Only numbers and more than 10 numbers!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__address">
-                            <label for="sign-address"class="formulario__label">Address</label>
-                            <input type="text" placeholder="Address" class="formulario__input" id="address">
+                        <div class="group_form" id="group_address">
+                            <label for="sign-address"class="form_label">Address</label>
+                            <input type="text" placeholder="Address" class="form_input" name="address" id="address">
                             <p class="message_error">¡At least 5 characters with letters,numbers and one space!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__"> 
-                            <label for="sign-loc"class="formulario__label">Location</label>
-                            <input type="text" placeholder="Location" class="formulario__input" id="loc">
+                        <div class="group_form" id="group_loc"> 
+                            <label for="sign-loc"class="form_label">Location</label>
+                            <input type="text" placeholder="Location" class="form_input" name="loc" id="loc">
                             <p class="message_error">¡Alphanumeric text with more than 3 letters!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__cp">
-                            <label for="sign-cp"class="formulario__label">Postal Code</label>
-                            <input type="number" placeholder="Postal Code" class="formulario__input" id="cp">
+                        <div class="group_form" id="group_cp">
+                            <label for="sign-cp"class="form_label">Postal Code</label>
+                            <input type="number" placeholder="Postal Code" class="form_input" name="cp" id="cp">
                             <p class="message_error">¡Only numbers and more than 4 numbers!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__email">
-                            <label for="sign-email"class="formulario__label">Email</label>
-                            <input type="text" placeholder="Email" class="formulario__input" id="email">
-                            <p class="message_error">¡Format of email valid!</p>
+                        <div class="group_form" id="group_email">
+                            <label for="sign-email"class="form_label">Email</label>
+                            <input type="text" placeholder="Email" class="form_input" name="email" id="email">
+                            <p class="message_error">¡Format of email invalid!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__password">
-                            <label for="sign-pass"class="formulario__label">Password</label>
-                            <input type="password" placeholder="Password"class="formulario__input" id="password">
+                        <div class="group_form" id="group_password">
+                            <label for="sign-pass"class="form_label">Password</label>
+                            <input type="password" placeholder="Password"class="form_input" name="password" id="password">
                             <p class="message_error">¡At least 8 characters with letters and numbers!</p>
                         </div>
-                        <div class="grupo__formulario" id="grupo__password2">
-                            <label for="repeat-pas"class="formulario__label">Repeat Password</label>
-                            <input type="password" placeholder="Repeat Password" class="formulario__input" id="password2">
+                        <div class="group_form" id="group_password2">
+                            <label for="repeat-pas"class="form_label">Repeat Password</label>
+                            <input type="password" placeholder="Repeat Password" class="form_input" name="password2" id="password2">
                             <p class="message_error">¡At least 8 characters with letters and numbers!</p> 
                         </div>
-                        <div class="grupo__formulario">
-                            <button type="submit" class="formulario__btn"> CREATE ACCOUNT </button>
-                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Your form has been sent successfully</p>
+                        <div class="group_form">
+                            <button type="submit" class="form_btn"> CREATE ACCOUNT </button>
+                            <p class="form_mensaje-exito" id="form_mensaje-exito">Your form has been sent successfully</p>
                         </div>
                     </form>
                 </div>
