@@ -49,14 +49,14 @@ window.onload = function() {
         
     }
 
-        function validatePass (){
-            if(validatePassword(password.value) === true){
-                messageAlert[1].classList.add('input_error');
-                messageAlert[1].classList.remove('input_error-active');
-            }else{
-            messageAlert[1].classList.add('input_error-active');
-            }
+    function validatePass (){
+        if(validatePassword(password.value) === true){
+            messageAlert[1].classList.add('input_error');
+            messageAlert[1].classList.remove('input_error-active');
+        }else{
+        messageAlert[1].classList.add('input_error-active');
         }
+    }
 
 
     email.addEventListener('blur',validacionEmail);
