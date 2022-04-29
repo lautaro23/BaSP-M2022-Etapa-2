@@ -98,3 +98,23 @@
 .login_input-incorrecto .formulario_label{
     color: #bb2929;
 }
+
+.message-validate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 0.4rem;
+    background-color:#00cc00;
+    margin-bottom: 1rem;
+}
+
+.message-validate-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 0.4rem;
+    background-color:#ff3300;
+    margin-bottom: 1rem;
+}
