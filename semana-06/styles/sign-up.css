@@ -89,3 +89,29 @@
 .form_mensaje-exito-activo {
 	display: block;
 }
+
+.error-div{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 0.4rem;
+    background-color:#4e756a;
+    margin-bottom: 1rem;
+}
+
+.error-div button {
+    width: 100px;
+    margin: 0;
+    background-color: #b80c00;
+    border-radius: 0.4rem;
+    color: #FFFFFF;
+}
+
+.error-div-active{
+    display: block;
+    
+}
+

@@ -13,12 +13,18 @@ window.onload = function() {
     var password = document.getElementById('password');
     var password2 = document.getElementById('password2');
     var messageAlert= document.getElementsByClassName('message_error');
+    var errorDiv = document.getElementById('error-div');
+    var btnCreate = document.getElementById('create-btn');
+    var closeButton = document.getElementById('btn-close')
     var numbers = ["0","1","2","3","4","5","6","7","8","9"];
     var letters = ["a","b","c","d","e","f","g","h","i","j","k",
                     "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", 
                     "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P",
                     "Q","R","S","T","U","V","W","X","Y","Z"];
     var symbols = ["!","#","$","%","&","/","(",")","=","?","¡","¿","+","*","[","]","{","}","-",".", "@"];
+
+
+    // Add blur event and validations
 
     function validateName (input) {
         var inputValue = input;
@@ -45,11 +51,16 @@ window.onload = function() {
     }
 
     function validateNam (){
+        var nameParagraph = document.createElement('p');
         if(validateName(name.value) === true){
             messageAlert[0].classList.add('message_error');
             messageAlert[0].classList.remove('message_error-active');
+            nameParagraph.innerText = 'Name: ' +name.value;
+            return nameParagraph;
         }else{
         messageAlert[0].classList.add('message_error-active');
+        nameParagraph.innerText = 'Add a valid name';
+            return nameParagraph;
         }
     }
 
@@ -78,11 +89,16 @@ window.onload = function() {
     }
     
     function validateSur (){
+        var surnameParagraph = document.createElement('p');
         if(validateSurname(surname.value) === true){
             messageAlert[1].classList.add('message_error');
             messageAlert[1].classList.remove('message_error-active');
+            surnameParagraph.innerText = 'Surname: ' +surname.value;
+            return surnameParagraph;
         }else{
         messageAlert[1].classList.add('message_error-active');
+        surnameParagraph.innerText = 'Add a valid surname';
+            return surnameParagraph;
         }
     }
 
@@ -102,7 +118,7 @@ window.onload = function() {
             }
         }
         
-        if(numberOfLetters === 0 && numericChar > 8 && numberOfSymbols === 0) {
+        if(numberOfLetters === 0 && numericChar > 7 && numberOfSymbols === 0) {
             return true
         } else {
             return false
@@ -111,11 +127,16 @@ window.onload = function() {
     }
 
     function validateDn (){
+        var dniParagraph = document.createElement('p');
         if(validateDni(dni.value) === true){
             messageAlert[2].classList.add('message_error');
             messageAlert[2].classList.remove('message_error-active');
+            dniParagraph.innerText = 'dni: ' +dni.value;
+            return dniParagraph;
         }else{
         messageAlert[2].classList.add('message_error-active');
+        dniParagraph.innerText = 'Add a valid dni';
+            return dniParagraph;
         }
     }
      
@@ -144,11 +165,16 @@ window.onload = function() {
     }
 
     function validateTel (){
+        var telParagraph = document.createElement('p');
         if(validateTelephone(tel.value) === true){
             messageAlert[4].classList.add('message_error');
             messageAlert[4].classList.remove('message_error-active');
+            telParagraph.innerText = 'Telephone: ' +tel.value;
+            return telParagraph;
         }else{
         messageAlert[4].classList.add('message_error-active');
+        telParagraph.innerText = 'Add a valid tel';
+            return telParagraph;
         }
     }
 
@@ -168,11 +194,16 @@ window.onload = function() {
     }
 
     function validateDat (){
+        var dateParagraph = document.createElement('p');
         if(validateDate(date.value) === true){
             messageAlert[3].classList.add('message_error');
             messageAlert[3].classList.remove('message_error-active');
+            dateParagraph.innerText = 'Date: ' +date.value;
+            return dateParagraph;
         }else{
         messageAlert[3].classList.add('message_error-active');
+        dateParagraph.innerText = 'Add a valid date';
+            return dateParagraph;
         }
     } 
 
@@ -204,11 +235,16 @@ window.onload = function() {
     }
 
     function validateAd (){
+        var addressParagraph = document.createElement('p');
         if(validateAddress(address.value) === true){
             messageAlert[5].classList.add('message_error');
             messageAlert[5].classList.remove('message_error-active');
+            addressParagraph.innerText = 'Address: ' +address.value;
+            return addressParagraph;
         }else{
         messageAlert[5].classList.add('message_error-active');
+        addressParagraph.innerText = 'Add a valid address';
+            return addressParagraph;
         }
     }
 
@@ -236,11 +272,16 @@ window.onload = function() {
     }
 
     function validateLoc (){
+        var locParagraph = document.createElement('p');
         if(validateLocation(location.value) === true){
             messageAlert[6].classList.add('message_error');
             messageAlert[6].classList.remove('message_error-active');
+            locParagraph.innerText = 'Location: ' +loc.value;
+            return locParagraph;
         }else{
         messageAlert[6].classList.add('message_error-active');
+        locParagraph.innerText = 'Add a valid location';
+            return locParagraph;
         }
     }
 
@@ -268,16 +309,22 @@ window.onload = function() {
     }
 
     function validateCp (){
+        var cpParagraph = document.createElement('p');
         if(validatePostal(postalCode.value) === true){
             messageAlert[7].classList.add('message_error');
             messageAlert[7].classList.remove('message_error-active');
+            cpParagraph.innerText = 'CP: ' +cp.value;
+            return cpParagraph;
         }else{
         messageAlert[7].classList.add('message_error-active');
+        cpParagraph.innerText = 'Add a valid cp';
+            return cpParagraph;
         }
     }
 
     function validacionEmail(){
         var regexEmail2 = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+        var emailParagraph = document.createElement('p');
         if(email.value.match(regexEmail2)){
             messageAlert[8].classList.add('message_error');
             messageAlert[8].classList.remove('message_error-active')
@@ -312,11 +359,16 @@ window.onload = function() {
     }
 
     function validatePass (){
+        var passParagraph = document.createElement('p');
         if(validatePassw(password.value) === true){
             messageAlert[9].classList.add('message_error');
             messageAlert[9].classList.remove('message_error-active');
+            passParagraph.innerText = 'Password: ' +password.value;
+            return passParagraph;
         }else{
         messageAlert[9].classList.add('message_error-active');
+        passParagraph.innerText = 'Add a valid password';
+            return passParagraph;
         }
     }
 
@@ -344,11 +396,16 @@ window.onload = function() {
     }
 
     function validateRepeatPass (){
+        var repeatPassParagraph = document.createElement('p');
         if(validateRepeatPassw(password2.value) === true && password2.value === password.value){
             messageAlert[10].classList.add('message_error');
             messageAlert[10].classList.remove('message_error-active');
+            repeatPassParagraph.innerText = 'Password repeat: ' +password2.value;
+            return repeatPassParagraph;
         }else{
         messageAlert[10].classList.add('message_error-active');
+        repeatPassParagraph.innerText = 'Repeat the same password';
+            return repeatPassParagraph;
         }
     }
 
@@ -363,6 +420,8 @@ window.onload = function() {
     email.addEventListener('blur',validacionEmail);
     password.addEventListener('blur',validatePass);
     password2.addEventListener('blur',validateRepeatPass);
+
+    // Add focus event
 
     function correctError(e){
         switch(e.target.name){
@@ -413,6 +472,43 @@ window.onload = function() {
         }
     }
        
+    function signCreate(){
+        var nameContainer = validateNam(name.value);
+        var surnameContainer = validateSur(surname.value);
+        var dniContainer = validateDn(dni.value);
+        var dateContainer = validateDat(date.value);
+        var telContainer = validateTel(tel.value);
+        var addressContainer = validateAd(address.value);
+        var locContainer = validateLoc(location.value);
+        var cpContainer = validateCp(postalCode.value);
+        var passContainer = validatePass(password.value);
+        var repeatPassContainer = validateRepeatPass(password2.value);
+        errorDiv.appendChild(nameContainer);
+        errorDiv.appendChild(surnameContainer);
+        errorDiv.appendChild(dniContainer);
+        errorDiv.appendChild(dateContainer);
+        errorDiv.appendChild(telContainer);
+        errorDiv.appendChild(addressContainer);
+        errorDiv.appendChild(locContainer);
+        errorDiv.appendChild(cpContainer);
+        errorDiv.appendChild(passContainer);
+        errorDiv.appendChild(repeatPassContainer);
+        errorDiv.classList.add('error-div-active');
+        closeButton.addEventListener('click',function (e) {
+            errorDiv.classList.remove('error-div-active');
+            nameContainer.parentNode.removeChild(nameContainer);
+            surnameContainer.parentNode.removeChild(surnameContainer);
+            dniContainer.parentNode.removeChild(dniContainer);
+            dateContainer.parentNode.removeChild(dateContainer);
+            telContainer.parentNode.removeChild(telContainer);
+            addressContainer.parentNode.removeChild(addressContainer);
+            locContainer.parentNode.removeChild(locContainer);
+            cpContainer.parentNode.removeChild(cpContainer);
+            passContainer.parentNode.removeChild(passContainer);
+            repeatPassContainer.parentNode.removeChild(repeatPassContainer);
+        })
+    }
+
     name.addEventListener('focus',correctError);
     surname.addEventListener('focus',correctError);
     dni.addEventListener('focus',correctError);
@@ -425,5 +521,16 @@ window.onload = function() {
     password.addEventListener('focus',correctError);
     password2.addEventListener('focus',correctError);
     
+
+    btnCreate.addEventListener('click', function(e){
+        e.preventDefault();
+        signCreate(e);
+    })
+    
 }
+
+
+
+
+
 
