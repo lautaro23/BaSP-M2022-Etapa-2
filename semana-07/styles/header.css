@@ -1,0 +1,43 @@
+header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 5rem;
+    min-height: 3rem;
+    width: 100%;
+    background-color: #aace9b;
+}
+
+h1 {
+    align-self: center;
+    font-family: 'Righteous' , 'Roboto', 'arial' ;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.h1-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+header nav ul {
+        display: none;
+}
+
+.burger {
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    header nav ul {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    header nav {
+        width: 40%;
+    }
+}

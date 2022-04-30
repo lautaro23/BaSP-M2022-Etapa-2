@@ -1,0 +1,120 @@
+.login-container {
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    margin:auto;
+    margin-top: 2rem;
+    background-color: #E0E0E0;
+    border-radius: 0.5rem;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container h2 {
+    align-self: center;
+    font-family: 'Righteous' , 'Roboto', 'arial' ;
+    font-weight: 400;
+    font-size: 2rem;
+    border-bottom: none;
+}
+
+.login_button button {
+    margin-bottom: 1rem;
+    margin: 0.2rem 0.5rem;
+    padding: 0.5rem 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    background-color: #AACE9B;
+    border: 0.2rem solid #AACE9B;
+    border-radius: 10px;
+}
+
+.login_button button:last-child {
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 0.2rem solid #AACE9B;
+    color: #000;
+}
+
+.login_input {
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.radio_input{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.login_input input {
+    width: 90%;
+}
+
+.login_input label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.input_error{
+    display:none;
+    margin: 0;
+    text-align:left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #ff0000
+}
+
+.input_error-active{
+    display:block;
+}
+
+.login_button{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form_log a{
+    margin-bottom:1rem ;
+}
+
+.login_input-incorrecto .formulario_input {
+	border: 3px solid #bb2929;
+}
+
+.login_input-incorrecto .formulario_label{
+    color: #bb2929;
+}
+
+.message-validate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 0.4rem;
+    background-color:#00cc00;
+    margin-bottom: 1rem;
+}
+
+.message-validate-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 0.4rem;
+    background-color:#ff3300;
+    margin-bottom: 1rem;
+}

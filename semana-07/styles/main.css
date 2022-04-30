@@ -1,0 +1,382 @@
+.section {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #C4C4C4;
+}
+
+.container-text-remote-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.remote-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.remote {
+    width: 80%;
+    text-shadow: 0.2rem 0.2rem 0.5rem #000;
+    text-align: center;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    border-bottom: none;
+}
+
+.planisphere-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.planisphere {
+    width: 95%;
+    justify-content: center;
+    align-content: center;
+}
+
+.buttonl-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-learn {
+    padding: 0.5rem 1rem;
+    margin: 3rem;
+    background: #FFFFFF;
+    border: 4px solid #AACE9B;
+    box-sizing: border-box;
+    border-radius: 1.7rem;
+}
+
+.timekeeping {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+}
+
+form {
+    display:flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input, select, textarea {
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+select, textarea{
+    width: 100%;
+}
+
+div p{
+    margin: 1rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.assets img {
+    border-radius: 1rem;
+}
+
+.picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.picture img {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin:0;
+}
+
+.picture input {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background: #AACE9B;
+    border: 0.1rem solid;
+    border-color: black;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    margin-bottom: 3rem;
+}
+
+
+form input {
+    align-items: center;
+    padding: 0.5rem 2rem 0.5rem 0.2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.input-name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.input-mail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+form select, form textarea {
+    display: block;
+    width: 95%;
+    padding: 0.2rem;
+    margin: 1rem 0;
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+form textarea {
+    height: 12rem;
+    resize: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+form button {
+    margin-bottom: 1rem;
+    margin: 0.2rem 0.5rem;
+    padding: 0.5rem 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    background-color: #AACE9B;
+    border: 0.2rem solid #AACE9B;
+    border-radius: 10px;
+}
+
+form button:last-child {
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 0.2rem solid #AACE9B;
+    color: #000;
+}
+
+.button-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    width: 80%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.p-about {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.p-about p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.p-about img {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.list div h3 {
+    margin: auto;
+    text-decoration: underline #AACE9B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+.column ol li {
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.assets-container .vertical-line{
+    display:none;
+    width: 2px;
+    height: 450px;
+    background-color: #C4C4C4;
+}
+    
+@media screen and (min-width: 768px) {
+    .container-text-remote-img {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .timekeeping{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    form input {
+        width: 45%;
+    }
+
+    form select, form textarea {
+        width:95%;
+    }
+
+    .button-message {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .p-about {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .p-about img{
+        width: 40%;
+        margin-right: 0.5rem;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .function-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .timekeeping{
+        width: 40%;  
+    }
+
+    .assets-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .assets-container div {
+        width: 40%;
+    }
+
+    .picture div{
+        width: 100%;
+    }
+
+    .assets-container .vertical-line{
+        display: block;
+    }
+
+}
