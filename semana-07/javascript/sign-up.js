@@ -520,6 +520,31 @@ window.onload = function() {
             passContainer.parentNode.removeChild(passContainer);
             repeatPassContainer.parentNode.removeChild(repeatPassContainer);
         })
+
+            var birth = date.value
+            var year = birth.substring (0,4);
+            var month = birth.substring (5,7);
+            var day = birth.substring(8,10);
+            var newDate = month +"/" + day + "/" + year;
+
+        if ( validateName(name.value) && validateSurname(surname.value) && validateDni(dni.value)  && validateDate() &&
+            validateTelephone(tel.value)  && validateAddress(address.value) && validateCp(postalCode.value)  && validateLocation(location.value) &&
+            validacionEmail()  && validatePassw(password.value) && validateRepeatPassw(password2.value)){
+                fetch ('https://basp-m2022-api-rest-server.herokuapp.com/signup?name=' +name.value+ '&lastName=' +surname.value+ '&dni='+dni.value+ 
+                        '&dob=' +newDate+ '&phone='+tel.value+ '&address='+address.value+ '&city=' +location.value+ '&zip=' +postalCode.value+
+                        '&email='+email.value+'&password='+password.value)
+                .then(function(data){
+                    console.log(date)
+                    return data.json()
+                })
+                .then(function(dataJson){
+                    alert('The request was succesful ' +JSON.stringify(dataJson));
+                })
+                .catch(function(error){
+                    alert('The request was not succesful '+ error);
+                })
+        } else{
+        }
     }
 
     name.addEventListener('focus',correctError);

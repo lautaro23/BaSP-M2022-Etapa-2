@@ -41,7 +41,7 @@ window.onload = function() {
             }
         }
         
-        if(numberOfLetters > 4 && numericChar > 2 && numberOfSymbols === 0) {
+        if(numberOfLetters >= 4 && numericChar > 2 && numberOfSymbols === 0) {
             return true
         } else {
             return false
@@ -99,10 +99,21 @@ window.onload = function() {
             newDiv.innerHTML ='<p> Password: Add a valid info </p>'
             container.parentNode.appendChild(newDiv);
         }
+
+        if (email.value === 'rose@radiumrocket.com' && password.value === 'BaSP2022'){
+            fetch ('https://basp-m2022-api-rest-server.herokuapp.com/login?email=rose@radiumrocket.com&password=BaSP2022')
+            .then(function(data){
+                return data.json()
+            })
+            .then(function(dataJson){
+                alert('The request was succesful ' +JSON.stringify(dataJson));
+            })
+            .catch(function(error){
+                alert('The request was not succesful '+ error);
+            })
+        }
     };
-
     
-
     buttonLogin[0].onclick = function (e) {
         showValues();
         e.preventDefault();
