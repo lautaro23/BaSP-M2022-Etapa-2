@@ -23,3 +23,8 @@ https://lautaro23.github.io/BaSP-M2022-Etapa-2/semana-05/index.html
 
 This week i had to design the login and signup sections of the landing page. Then i had to use DOM for validate the form.
 
+## Week 7
+
+This week i had to make a request for to connect the form data to a web server with the methop fetch and localStorage.
+https://github.com/lautaro23/BaSP-M2022-Etapa-2/tree/master/semana-07/javascript
+
