@@ -10,8 +10,10 @@
 }
 
 .form{
-    display:flex;
-    flex-direction:column;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-left: 100px;
+    gap:10px;
 }
 
 .form-container h2 {
@@ -72,6 +74,11 @@
     border-radius: 10px;
 }
 
+.group_form-btn {
+    grid-column: span 2;
+    width: 80%;
+}
+
 .group_form-incorrecto .form_input {
 	border: 3px solid #bb2929;
 }
@@ -115,3 +122,13 @@
     
 }
 
+@media screen and (max-width: 800px) {
+    .form{
+        grid-template-columns:1fr;
+    }
+
+    .group_form-btn {
+        grid-column: span 1;
+        width:70%
+    }
+}
