@@ -538,7 +538,20 @@ window.onload = function() {
                     return data.json()
                 })
                 .then(function(dataJson){
+                    console.log(dataJson);
                     alert('The request was succesful ' +JSON.stringify(dataJson));
+                    dataJson.data.dob = year + '-' + month + '-' + day;
+                    localStorage.setItem('employee',JSON.stringify(dataJson));
+                    localStorage.setItem('name',dataJson.data.name);
+                    localStorage.setItem('surname',dataJson.data.lastName);
+                    localStorage.setItem('dni',dataJson.data.dni);
+                    localStorage.setItem('date',dataJson.data.dob);
+                    localStorage.setItem('phone',dataJson.data.phone);
+                    localStorage.setItem('address',dataJson.data.address);
+                    localStorage.setItem('location',dataJson.data.city);
+                    localStorage.setItem('cp',dataJson.data.zip);
+                    localStorage.setItem('email',dataJson.data.email);
+                    localStorage.setItem('password',dataJson.data.password);
                 })
                 .catch(function(error){
                     alert('The request was not succesful '+ error);
@@ -546,6 +559,25 @@ window.onload = function() {
         } else{
         }
     }
+
+    function getData() {
+        if(localStorage.getItem('employee')){
+            name.value = localStorage.getItem('name');
+            surname.value = localStorage.getItem('surname');
+            dni.value = localStorage.getItem('dni');
+            date.value = localStorage.getItem('date');
+            tel.value = localStorage.getItem('phone');
+            address.value = localStorage.getItem('address');
+            location.value = localStorage.getItem('location');
+            postalCode.value = localStorage.getItem('cp');
+            email.value = localStorage.getItem('email');
+            password.value = localStorage.getItem('password');
+        }else{
+            console.log('There are no entries in the localStorage')
+        }
+    }
+
+    getData();
 
     name.addEventListener('focus',correctError);
     surname.addEventListener('focus',correctError);
