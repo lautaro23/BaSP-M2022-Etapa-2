@@ -43,6 +43,11 @@
     color: #000;
 }
 
+.login_button button:last-child a {
+    text-decoration: none;
+    color:#000;
+}
+
 .login_input {
     display:flex;
     flex-direction: column;
@@ -52,8 +57,12 @@
 
 .radio_input{
     display:flex;
-    flex-direction: column;
     margin-bottom: 2rem;
+}
+
+.radio_input input{
+    width: 10px;
+    height: 10px;
 }
 
 .login_input input {
@@ -91,11 +100,11 @@
     margin-bottom:1rem ;
 }
 
-.login_input-incorrecto .formulario_input {
+.login_input-incorrecto .form_input {
 	border: 3px solid #bb2929;
 }
 
-.login_input-incorrecto .formulario_label{
+.login_input-incorrecto .form_label{
     color: #bb2929;
 }
 
@@ -117,4 +126,9 @@
     border-radius: 0.4rem;
     background-color:#ff3300;
     margin-bottom: 1rem;
+}
+
+.form_log a{
+    text-decoration: none;
+    color: #000;
 }

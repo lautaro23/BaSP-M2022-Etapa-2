@@ -215,7 +215,6 @@ window.onload = function() {
         var numericChar = 0;
         var numberOfSymbols = 0;
         for(var i= 0; i < inputValue.length; i++) {
-            // var inputName = inputValue[i]
             if (letters.indexOf(inputValue[i]) != -1) {
                 numberOfLetters++;
             }else if (numbers.indexOf(inputValue[i]) != -1){
@@ -322,7 +321,7 @@ window.onload = function() {
         }
     }
 
-    function validacionEmail(){
+    function validateEmail(){
         var regexEmail2 = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
         if(email.value.match(regexEmail2)){
             messageAlert[8].classList.add('message_error');
@@ -336,7 +335,7 @@ window.onload = function() {
 
     function validateMail (){
         var emailParagraph = document.createElement('p');
-        if(validacionEmail(email.value) === true){
+        if(validateEmail(email.value) === true){
             emailParagraph.innerText = 'Email: ' +email.value;
             return emailParagraph;
         }else{
@@ -427,7 +426,7 @@ window.onload = function() {
     address.addEventListener('blur',validateAd);
     location.addEventListener('blur',validateLoc);
     postalCode.addEventListener('blur',validateCp);
-    email.addEventListener('blur',validacionEmail);
+    email.addEventListener('blur',validateEmail);
     password.addEventListener('blur',validatePass);
     password2.addEventListener('blur',validateRepeatPass);
 
@@ -526,19 +525,18 @@ window.onload = function() {
             var month = birth.substring (5,7);
             var day = birth.substring(8,10);
             var newDate = month +"/" + day + "/" + year;
+            var validations = validateName(name.value) + validateSurname(surname.value) + validateDni(dni.value)  + validateDate() +
+            validateTelephone(tel.value)  + validateAddress(address.value) + validateCp(postalCode.value)  + validateLocation(location.value) +
+            validateEmail()  + validatePassw(password.value) + validateRepeatPassw(password2.value);
 
-        if ( validateName(name.value) && validateSurname(surname.value) && validateDni(dni.value)  && validateDate() &&
-            validateTelephone(tel.value)  && validateAddress(address.value) && validateCp(postalCode.value)  && validateLocation(location.value) &&
-            validacionEmail()  && validatePassw(password.value) && validateRepeatPassw(password2.value)){
+        if (validations){
                 fetch ('https://basp-m2022-api-rest-server.herokuapp.com/signup?name=' +name.value+ '&lastName=' +surname.value+ '&dni='+dni.value+ 
                         '&dob=' +newDate+ '&phone='+tel.value+ '&address='+address.value+ '&city=' +location.value+ '&zip=' +postalCode.value+
                         '&email='+email.value+'&password='+password.value)
                 .then(function(data){
-                    console.log(date)
                     return data.json()
                 })
                 .then(function(dataJson){
-                    console.log(dataJson);
                     alert('The request was succesful ' +JSON.stringify(dataJson));
                     dataJson.data.dob = year + '-' + month + '-' + day;
                     localStorage.setItem('employee',JSON.stringify(dataJson));
@@ -573,7 +571,6 @@ window.onload = function() {
             email.value = localStorage.getItem('email');
             password.value = localStorage.getItem('password');
         }else{
-            console.log('There are no entries in the localStorage')
         }
     }
 

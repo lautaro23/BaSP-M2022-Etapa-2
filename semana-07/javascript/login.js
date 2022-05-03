@@ -13,7 +13,7 @@ window.onload = function() {
     var container = document.querySelector('.login-container h2');
 
     
-    function validacionEmail(){
+    function validateEmail(){
         var regexEmail2 = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
         if(email.value.match(regexEmail2)){
             messageAlert[0].classList.add('input_error');
@@ -59,7 +59,7 @@ window.onload = function() {
     }
 
 
-    email.addEventListener('blur',validacionEmail);
+    email.addEventListener('blur',validateEmail);
     password.addEventListener('blur',validatePass);
     
     function correctError(e){
@@ -79,17 +79,17 @@ window.onload = function() {
     password.addEventListener('focus',correctError);
 
     function showValues () {
-        if (validacionEmail(email.value) === true && validatePassword(password.value) === true ) {
+        if (validateEmail(email.value) === true && validatePassword(password.value) === true ) {
             newDiv.className ='message-validate';
             newDiv.innerHTML = '<p> Email: ' +email.value+ '</p>' +
             '<p> Password: ' +password.value+ '</p>'
             container.parentNode.appendChild(newDiv);    
-        } else if (validacionEmail(email.value) === false && validatePassword(password.value) === true ) {
+        } else if (validateEmail(email.value) === false && validatePassword(password.value) === true ) {
             newDiv.className = 'message-validate-error';
             newDiv.innerHTML = '<p> Email: Add a valid email</p>' +
             '<p> Password: ' +password.value+ '</p>'
             container.parentNode.appendChild(newDiv);
-        } else if (validacionEmail(email.value) === true && validatePassword(password.value) === false ) {
+        } else if (validateEmail(email.value) === true && validatePassword(password.value) === false ) {
             newDiv.className = 'message-validate-error';
             newDiv.innerHTML = '<p> Email: ' +email.value+ '</p>' +
             '<p> Password: Add a valid password </p>'
@@ -100,18 +100,16 @@ window.onload = function() {
             container.parentNode.appendChild(newDiv);
         }
 
-        if (email.value === 'rose@radiumrocket.com' && password.value === 'BaSP2022'){
-            fetch ('https://basp-m2022-api-rest-server.herokuapp.com/login?email=rose@radiumrocket.com&password=BaSP2022')
-            .then(function(data){
-                return data.json()
-            })
-            .then(function(dataJson){
-                alert('The request was succesful ' +JSON.stringify(dataJson));
-            })
-            .catch(function(error){
-                alert('The request was not succesful '+ error);
-            })
-        }
+        fetch ('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+email.value+'&password='+password.value)
+        .then(function(data){
+            return data.json()
+        })
+        .then(function(dataJson){
+            alert('The request was succesful ' +JSON.stringify(dataJson));
+        })
+        .catch(function(error){
+            alert('The request was not succesful '+ error);
+        })
     };
     
     buttonLogin[0].onclick = function (e) {

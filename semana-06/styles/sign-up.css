@@ -9,7 +9,7 @@
     border-radius: 0.5rem;
 }
 
-.form{
+.form-2{
     display:grid;
     grid-template-columns:1fr 1fr;
     margin-left: 100px;
@@ -123,7 +123,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .form{
+    .form-2{
         grid-template-columns:1fr;
     }
 
