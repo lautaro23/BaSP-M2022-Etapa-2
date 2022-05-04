@@ -57,10 +57,14 @@
 
 .radio_input{
     display:flex;
+    width: 150px;
     margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .radio_input input{
+    margin-top: 5px;
     width: 10px;
     height: 10px;
 }

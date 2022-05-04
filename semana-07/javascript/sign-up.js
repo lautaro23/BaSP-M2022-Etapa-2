@@ -1,6 +1,5 @@
 window.onload = function() {
 
-    var formulario = document.getElementById('formulario');
     var name = document.getElementById('name');
     var surname = document.getElementById('surname');
     var dni = document.getElementById('dni');
@@ -15,7 +14,7 @@ window.onload = function() {
     var messageAlert= document.getElementsByClassName('message_error');
     var errorDiv = document.getElementById('error-div');
     var btnCreate = document.getElementById('create-btn');
-    var closeButton = document.getElementById('btn-close')
+    var closeButton = document.getElementById('btn-close');
     var numbers = ["0","1","2","3","4","5","6","7","8","9"];
     var letters = ["a","b","c","d","e","f","g","h","i","j","k",
                     "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", 

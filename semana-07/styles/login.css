@@ -57,12 +57,16 @@
 
 .radio_input{
     display:flex;
-    flex-direction: column;
+    width: 150px;
     margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.login_input input {
-    width: 90%;
+.radio_input input{
+    margin-top: 5px;
+    width: 10px;
+    height: 10px;
 }
 
 .login_input label{
@@ -127,4 +131,28 @@
 .form_log a{
     text-decoration: none;
     color: #000;
+}
+
+.error-div-log{
+    display: none;
+    align-items: center;
+    width: 300px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 0.4rem;
+    background-color:#4e756a;
+    margin-bottom: 1rem;
+}
+
+.error-div-log button {
+    width: 100px;
+    margin: 0;
+    background-color: #b80c00;
+    border-radius: 0.4rem;
+    color: #FFFFFF;
+}
+
+.error-div-active{
+    display: flex;
+    flex-direction: column;   
 }

@@ -26,5 +26,6 @@ This week i had to design the login and signup sections of the landing page. The
 ## Week 7
 
 This week i had to make a request for to connect the form data to a web server with the methop fetch and localStorage.
-https://github.com/lautaro23/BaSP-M2022-Etapa-2/tree/master/semana-07/javascript
+
+https://lautaro23.github.io/BaSP-M2022-Etapa-2/semana-07/views/index.html
 
